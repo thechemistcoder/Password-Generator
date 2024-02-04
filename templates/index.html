@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Password Generator</h1>
+        <form action="/generate_password" method="post">
+            <div class="mb-3">
+                <label for="minlen" class="form-label">Minimum Length:</label>
+                <input type="text" class="form-control" name="minlen" required>
+            </div>
+            <div class="mb-3">
+                <label for="maxlen" class="form-label">Maximum Length:</label>
+                <input type="text" class="form-control" name="maxlen" required>
+            </div>
+            <div class="mb-3">
+                <label for="minuchars" class="form-label">Minimum Upper Case:</label>
+                <input type="text" class="form-control" name="minuchars" required>
+            </div>
+            <div class="mb-3">
+                <label for="minlchars" class="form-label">Minimum Lower Case:</label>
+                <input type="text" class="form-control" name="minlchars" required>
+            </div>
+            <div class="mb-3">
+                <label for="minnumbers" class="form-label">Minimum Numbers:</label>
+                <input type="text" class="form-control" name="minnumbers" required>
+            </div>
+            <div class="mb-3">
+                <label for="minschars" class="form-label">Minimum Special Characters:</label>
+                <input type="text" class="form-control" name="minschars" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Generate Password</button>
+        </form>
+    </div>
+</body>
+</html>
